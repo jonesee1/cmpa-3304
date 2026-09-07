@@ -1,3 +1,21 @@
+@media (width >= 480px) { ,
+    .collection-card {
+        flex-basis: 45%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+
+@media (width >= 1024px) {
+    .collection-card {
+        flex-basis: 30%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
 * {
     box-sizing: border-box;
 }
@@ -55,7 +73,23 @@ p {
 .screenshot-container img {
     max-width: 100%;
     height: auto;
-    display: block;
+    display: flex;
+    flex-direction: row;
     margin: 0 auto;
     border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.collection-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.collection-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1 1 calc(50% - 32px);
+    gap: 32px;
 }
