@@ -81,24 +81,69 @@ code {
 
 .nav-justified {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: left;
   position: fixed;
   left: 32px;
   top: 32px;
   width: 200px;
 }
+
+.nav-justified nav {
+  display: flex;
+  gap: 0.5rem;
+    top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333333;
+  padding: 0 32px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.nav-justified ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+}
+
+.nav-justified a {
+  flex: 1;
+  background-color: #333333;
+  color: white;
+  border: 1px solid;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+.nav-justified a:hover,
+.nav-justified  a:focus {
+  background-color: rgb(145, 71, 243);
+  color: #FFFFFF;
+}
+
 .nav-simple ul {
+  list-style-type: none;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .nav-simple li {
+  list-style-type: none;
+  list-style: none;
   margin-bottom: 8px;
 }
 
 .nav-justified a {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 8px 16px;
   color: #0066CC;
   text-decoration: none;
@@ -155,15 +200,6 @@ code {
   margin-top: 80px;
 }
 
-.nav-custom {}
-
-.nav-custom ul {}
-
-.nav-custom li {}
-
-.nav-custom a {}
-
-.nav-custom a:hover {}
 
 @media (width >=480px) {}
 
