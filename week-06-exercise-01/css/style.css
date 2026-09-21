@@ -79,6 +79,14 @@ code {
   width: 200px;
 }
 
+.nav-justified {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 32px;
+  top: 32px;
+  width: 200px;
+}
 .nav-simple ul {
   list-style: none;
   margin: 0;
@@ -100,7 +108,7 @@ code {
 }
 
 .nav-simple a:hover {
-  background-color: #0066CC;
+  background-color: #ac28e9;
   color: #ffffff;
 }
 
